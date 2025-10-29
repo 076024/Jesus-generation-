@@ -1,0 +1,165 @@
+.changing-title {
+  animation: color-change 5s infinite;
+}
+
+@keyframes color-change {
+  0% {
+    color: #ff0000; /* red */
+  }
+  25% {
+    color: #00ff00; /* green */
+  }
+  50% {
+    color: #0000ff; /* blue */
+  }
+  75% {
+    color: #ffff00; /* yellow */
+  }
+  100% {
+    color: #ff0000; /* red */
+  }
+}
+
+
+    /* === Typing Text Styling === */
+#typing-text {
+  
+  font-size: clamp(1.2rem, 5vw, 2.5rem); /* Responsive text size */
+  color: #222; /* Dark gray color */
+  border-right: 3px solid #222; /* Blinking cursor */
+  white-space: nowrap; /* Keeps text on one line */
+  overflow: hidden; /* Hides overflowing text while typing */
+  animation: blink 0.7s step-end infinite; /* Cursor blink effect */
+}
+
+    /* === Cursor Blink Animation === */
+@keyframes blink {
+  from, to { border-color: transparent; }
+  50% { border-color: #222; }
+}
+
+    /* === Accessibility: Disable animation if user prefers reduced motion === */
+@media (prefers-reduced-motion: reduce) {
+  #typing-text {
+    animation: none;
+    border: none;
+  }
+}
+ 
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+.nav-bar {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+.nav-bar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.nav-bar li {
+  display: inline-block;
+  margin-right: 20px;
+}
+.nav-bar a {
+  color: #fff;
+  text-decoration: none;
+}
+.nav-bar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 30px;
+}
+.none {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0px;
+}
+.feature {
+  background-color: #fff;
+  padding: 10px;
+  margin: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.feature h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.feature p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: justify-all;
+}
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  clear: both;
+}
+.footer p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.social-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+        }
+.social-links li {
+  display: inline-block;
+  margin-right: 20px;
+}
+.social-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.whatsapp-button {
+  background-color: #25D366;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.whatsapp-button:hover {
+  background-color: #1DA851;
+}
+
+
+
+#daily-scripture {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+#scripture-text {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#scripture-reference {
+  font-size: 14px;
+  color: #666;
+}
